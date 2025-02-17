@@ -16,7 +16,6 @@ body.background-gif {
     font-family: "IBM Plex Mono", serif;
     font-weight: 400;
     font-style: normal;
-    #font-family: 'Inter', sans-serif;
     line-height: 1.6;
 }
 
@@ -35,12 +34,27 @@ body.background-gif {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: "Anton", serif;
 }
 
-.menu .logo {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #ffffff;
+.menu .logo a {
+    color: #f58b13; /* Cor marrom para o item MenuHome */
+    font-style: italic;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    font-family: "Anton", serif;
+    text-decoration: none;
+    border-radius: 10%;
+    display: inline-block;
+    min-width: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.logo a:hover {
+    color: #13f5f0;
 }
 
 
@@ -48,14 +62,13 @@ body.background-gif {
 .menu ul {
     align-items: center;
     list-style: none;
-    font-family: "Anton", serif;
     font-weight: 400;
     font-style: normal;
     display: flex;
     gap: 20px;
     margin: 0;
     padding: 0;
-    color:brown
+    color:brown;
 }
 
 .menu ul li {
@@ -72,13 +85,13 @@ body.background-gif {
 }
 
 .menu ul li.MenuHome a {
-    color: #f58b13 !important;  /* Cor marrom para o item MenuHome */
+    color: #f58b13  !important; /* Cor marrom para o item MenuHome */
     font-style: italic;
     font-size: 2.5rem;
 }
 
 .menu ul li a:hover {
-    color:#f58b13 /* Azul ao passar o mouse */
+    color:#f58b13 
 }
 
 /* Estilos do Header */
@@ -114,8 +127,8 @@ body.background-gif {
     z-index: 2; /* Garantir que o conteúdo fique acima do overlay */
     width: 100%;
     max-width: 1200px;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .header h1 {
@@ -151,7 +164,7 @@ body.background-gif {
 }
 
 .about {
-    padding: 60px 0;
+    padding: 6px 0;
 }
 
 .about h3 {
@@ -171,7 +184,7 @@ body.background-gif {
 
 /* Estilos da Seção Clients */
 .clients {
-    padding: 60px 0;
+    padding: 6px 0;
 }
 
 .clients h3 {
@@ -181,12 +194,33 @@ body.background-gif {
     text-align:start;
     color: #ffffff; /* Branco */
 }
+.client-container {
+    display: flex; /* Faz as divs ficarem lado a lado */
+    gap: 2px; /* Espaço entre as divs */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap
+}
 
 .client-list {
-    text-align: start;
+    
+    text-align: center; /* Centraliza o texto */
+    text-transform: uppercase;
     font-size: 1.1rem;
     color: #cccccc; /* Cinza claro */
+    display: flex; /* Ativa o flexbox */
+    flex-direction: column; /* Organiza os itens em coluna (texto em cima, imagem abaixo) */
+    justify-content: start; /* Centraliza o conteúdo na vertical */
+    align-items: center; /* Centraliza os itens na horizontal */
+    
+    
 }
+
+.client-list img {
+    display: block; /* Garante que a imagem seja tratada como bloco */
+    margin-top: 5px; /* Espaço entre o texto e a imagem */
+}
+
 
 
 
@@ -317,12 +351,22 @@ body.background-gif {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    body p{
+       font-size: 1rem !important;
+    }
     .menu ul {
-        gap: 15px;
+        gap: 10px;
+    }
+    .menu .logo a{
+        font-size: 2rem !important;
+
+    }
+    .MenuHome a{
+        font-size: 1.0rem !important;
     }
 
     .menu ul li a {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 
     .header h1 {
@@ -334,14 +378,15 @@ body.background-gif {
     }
 
     .about h3 {
-        font-size: 1.8rem;
+        font-size: 2rem !important;
     }
 
     .clients h3 {
-        font-size: 1.8rem;
+        font-size: 1rem;
     }
 
     .footer h3 {
         font-size: 1.2rem;
     }
 }
+
