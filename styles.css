@@ -380,7 +380,12 @@ body.background-gif {
     .about h3 {
         font-size: 2rem !important;
     }
+    .client-list img{
+        max-width: 30px;
+        max-height: 30px;
+        margin-bottom: 10px;
 
+    }
     .clients h3 {
         font-size: 1rem;
     }
