@@ -1,0 +1,635 @@
+.TextoDestaqueOrange {
+    color: #f58b13 !important;
+    text-transform: uppercase;
+}
+
+.TextoDestaqueAzul {
+    color: #13f5f0 !important;
+    text-transform: uppercase;
+}
+/* Estilos do plano de fundo e body */
+body.background-gif {
+    background-color: #10101C;
+    /* Cor de fundo */
+    background-image: url('https://cdn.myportfolio.com/a97de94d1f8489b3887483ca1689b134/d76e4c1c-6600-46ea-9141-e93b6613c73f_rwc_0x0x500x500x4096.gif?h=347a4c772111bd4026b0348fc026e598');
+    background-position: top left;
+    /* Posiciona a imagem no canto superior esquerdo */
+    background-repeat: repeat;
+    /* Repete a imagem */
+    background-size: auto;
+    /* Mantém o tamanho original da imagem */
+    color: #ffffff;
+    /* Texto branco para contraste */
+    font-family: "IBM Plex Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos do Menu */
+.menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 0px solid rgba(255, 255, 255, 0.1);
+    /* Borda sutil */
+}
+
+.menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: "Anton", serif;
+}
+
+.menu .logo a {
+    color: #f58b13;
+    /* Cor marrom para o item MenuHome */
+    font-style: italic;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    font-family: "Anton", serif;
+    text-decoration: none;
+    border-radius: 10%;
+    display: inline-block;
+    min-width: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.logo a:hover {
+    color: #13f5f0;
+}
+
+
+
+.menu ul {
+    align-items: center;
+    list-style: none;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    color: brown;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 1.9rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.menu ul li.MenuHome a {
+    color: #f58b13 !important;
+    /* Cor marrom para o item MenuHome */
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+.menu ul li a:hover {
+    color: #f58b13
+}
+
+/* Estilos do Hero */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
+    gap: 20px; /* Espaçamento entre as colunas */
+    align-items: center; /* Centraliza verticalmente os itens */
+    height: 100vh;
+}
+
+.ct1 p{
+    align-content: center;
+    text-align: justify;
+
+}
+
+.ct1 a{
+    display: inline-block;
+    background: #f58b13;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    padding: 10px;
+    text-transform: uppercase;
+
+
+}
+
+.ct1 a:hover{
+    color:#f58b13;
+    background-color: white; 
+    text-decoration: none;
+
+}
+
+.ct2 img{
+    text-align: justify; /* Justifica o texto do parágrafo */
+    width: 500px;
+    height: auto;
+}
+
+
+
+
+
+/* Container para centralizar o conteúdo */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+
+/* Estilos da Seção Ferramentas */
+.tools {
+    display: grid;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.logoToolsHiddenLeft {
+    display: flex;
+    gap: 5px;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-10%);
+    transition: all 1s;
+}
+
+.logoToolsHiddenRight {
+    display: flex;
+    gap: 5px;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(10%);
+    transition: all 1s;
+}
+
+
+
+.logoToolsHiddenDown {
+    display: flex;
+    gap: 5px;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(10%);
+    transition: all 1s;
+}
+
+.logoTools {
+    display: flex;
+
+}
+
+.logoToolsShow {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+
+
+}
+
+
+.logoTools div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: hsl(0, 0%, 100%) solid 1px;
+    border-radius: 20%;
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    animation: levitando 8s ease-in-out infinite;
+    background: hsl(0, 0%, 100%);
+
+}
+
+.logoTools img {
+    max-width: 120px;
+}
+
+.zabbix-logo {
+    background: #D40000;
+
+}
+
+.mikrotik-logo img {
+    max-width: 190px;
+}
+
+.python-logo {
+    background-color: #285868;
+}
+
+.css-logo img {
+    max-width: 100px;
+
+}
+
+
+/*@keyframes levitando {
+    0%, 100% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}*/
+
+
+
+
+/* Estilos da Seção Clients */
+.clients {
+    padding: 6px 0;
+}
+
+.clients h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+
+    /* Branco */
+}
+
+.client-container {
+    display: flex;
+    /* Faz as divs ficarem lado a lado */
+    gap: 2px;
+    /* Espaço entre as divs */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.client-list {
+    border-radius: 5px;
+    height: fit-content;
+    width: 500px;
+    padding: 10px;
+    background-color: #99999923;
+
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    
+    
+}
+
+.client-list p {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.client-list img {
+    width: 90px;
+    height: auto;
+
+
+}
+
+
+
+
+/* foto home*/
+.image-container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    /* Ajusta a largura do container */
+}
+
+.image-container img {
+
+
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    width: 75%;
+    /* Faz a largura da imagem ser 100% da div */
+    height: 75%;
+    /* Faz a altura da imagem ser 100% da div */
+}
+
+/* slide*/
+
+.wrapper {
+    position: relative;
+    margin: 40px auto;
+    border: 0px solid red;
+    overflow: hidden;
+    height: 500px;
+    max-width: 700px;
+    border-radius: 4px;
+}
+
+.imgList {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 1000%;
+    text-align: center;
+}
+
+.imgList li {
+    height: 100px;
+    float: left;
+    display: inline-block;
+    background: rgba(255, 255, 4, .6);
+    height: 500px;
+    width: 700px;
+}
+
+.imgList li .nr {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 19%;
+    left: 0%;
+    transition: transformY(-50%) transformX(-50%);
+    font-size: 200px;
+    color: #fff;
+    text-shadow: 2px 1px 1px #999;
+}
+
+.glyphicon-menu-left {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    border: 0px solid red;
+    padding: 10px;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+}
+
+.glyphicon-menu-right {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    right: 0;
+    border: 0px solid red;
+    padding: 10px;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+}
+
+.imgList li:nth-child(1) {
+    background: #1abc9c;
+}
+
+.imgList li:nth-child(2) {
+    background: purple;
+}
+
+.imgList li:nth-child(3) {
+    background: orange;
+}
+
+.imgList li:nth-child(4) {
+    background: indianred;
+}
+
+.imgList li:nth-child(5) {
+    background: #d35400;
+}
+
+.imgList li:nth-child(6) {
+    background: #2ecc71;
+}
+
+
+/* Estilos do Footer */
+.footer {
+    padding: 40px 0;
+    text-align: start;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #007bff;
+    /* Azul */
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+
+    .menu ul {
+        gap: 10px;
+    }
+
+    .menu .logo a {
+        font-size: 2rem !important;
+
+    }
+
+    .MenuHome a {
+        font-size: 1.0rem !important;
+    }
+
+    .menu ul li a {
+        font-size: 1.2rem;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .header h2 {
+        font-size: 1.2rem;
+    }
+
+    .about h3 {
+        font-size: 2rem !important;
+    }
+
+
+
+    .footer h3 {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    /* inicio do hero*/  
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;
+
+        text-align: start;
+        margin-bottom: 60px;
+        width: 100%;
+    height: 100%;
+
+     
+    
+
+    }
+
+    .ct1{
+        width: 90%;
+        height: fit-content;
+
+    }
+    
+    .ct1 p{
+        text-align: justify;
+
+
+    
+    }
+
+    
+    .ct1 {
+
+    
+    }
+    
+    .ct1 a:hover{
+
+    
+    }
+    .ct2{
+        height: auto;
+    }
+    
+    .ct2 img{
+        height: 350px;
+        width: auto;
+
+    }
+/* fim do hero*/    
+
+    .tools {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(2, 10fr);
+
+
+    }
+
+    .logoTools {
+
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+
+
+
+    }
+
+
+    .logoTools div {
+        width: 150px;
+        height: 150px;
+
+
+
+    }
+
+    .logoTools img {
+        max-width: 90px;
+    }
+
+    .zabbix-logo {
+        background: #D40000;
+
+    }
+
+    .mikrotik-logo img {
+        max-width: 120px;
+    }
+
+    .python-logo {
+        background-color: #285868;
+    }
+
+    .css-logo img {
+        max-width: 80px;
+
+    }
+
+
+    .logoTools {
+
+        display: grid;
+        flex-direction: row;
+
+
+    }
+
+
+    .client-list img {
+        max-width: 50px;
+        max-height: auto;
+        margin-bottom: 10px;
+    }
+
+    .clients h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .client-list p{
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+
+
+}
